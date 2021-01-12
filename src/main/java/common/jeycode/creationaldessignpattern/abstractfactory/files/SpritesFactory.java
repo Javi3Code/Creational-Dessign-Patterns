@@ -1,6 +1,7 @@
 package common.jeycode.creationaldessignpattern.abstractfactory.files;
 
-public interface SpritesFactory {
+public interface SpritesFactory
+{
 
 						Character createCharacter();
 

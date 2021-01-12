@@ -2,35 +2,48 @@ package common.jeycode.creationaldessignpattern.prototype.files;
 
 import manipulateComponents.Constants.Velocity;
 
-public class DeepCloneFactory implements CloudFactory {
+public class DeepCloneFactory implements CloudFactory
+{
 
 						private static CloudFactory instance;
 						private final OriginalShape shape;
 						private static AbstractCloud prototypeSimple;
 						private static AbstractCloud prototypeComplex;
 
-						private DeepCloneFactory(OriginalShape shape) {
+						private DeepCloneFactory(OriginalShape shape)
+						{
 												this.shape = shape;
 												initPrototype();
 						}
 
-						public static CloudFactory getFactory(OriginalShape shape) {
+						public static CloudFactory getFactory(OriginalShape shape)
+						{
 												instance = instance == null ? new DeepCloneFactory(shape) : instance;
 												return instance;
 						}
 
-						private void initPrototype() {
+						private void initPrototype()
+						{
 												prototypeSimple = new SimpleCloud(shape,Velocity.GEARZERO);
 												prototypeComplex = new ComplexCloud(shape);
 						}
 
 						@Override
-						public AbstractCloud createSimpleCloud() { return prototypeSimple.deepClone(); }
+						public AbstractCloud createSimpleCloud()
+						{
+												return prototypeSimple.deepClone();
+						}
 
 						@Override
-						public AbstractCloud createComplexCloud() { return prototypeComplex.deepClone(); }
+						public AbstractCloud createComplexCloud()
+						{
+												return prototypeComplex.deepClone();
+						}
 
 						@Override
-						public OriginalShape getOriginalShape() { return shape; }
+						public OriginalShape getOriginalShape()
+						{
+												return shape;
+						}
 
 }

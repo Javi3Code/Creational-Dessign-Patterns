@@ -1,11 +1,14 @@
 package common.jeycode.creationaldessignpattern.builder.files;
 
-public class PremiumUserBuilder extends UserBuilder {
+public class PremiumUserBuilder extends UserBuilder
+{
 
-						public PremiumUserBuilder() {}
+						public PremiumUserBuilder()
+						{}
 
 						@Override
-						void permissionList() {
+						void permissionList()
+						{
 												permissionList.add("Change nickname ten times");
 												permissionList.add("Free shipping");
 												permissionList.add("Discounts");
@@ -13,7 +16,8 @@ public class PremiumUserBuilder extends UserBuilder {
 						}
 
 						@Override
-						public User build() {
+						public User build()
+						{
 												permissionList();
 												return user;
 						}

@@ -22,7 +22,8 @@ public class ComplexCloud extends AbstractCloud
 						private void assignProperties()
 						{
 												type = CloudType.COMPLEX;
-												PutMovementToComponent.newInstance().giveMovementToTheComponent(this);
+												PutMovementToComponent.newInstance()
+																																		.giveMovementToTheComponent(this);
 
 						}
 

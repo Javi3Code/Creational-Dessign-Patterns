@@ -18,7 +18,7 @@ public class LoadLabel extends JLabel
 						private static final long serialVersionUID = 1L;
 						private final BufferedImage[] sprite = new BufferedImage[7];
 						private int index = 0;// @formatter:off
-
+ 
 						private final String[] path= {
          																														"src/image/load0.png",
          																														"src/image/load1.png",

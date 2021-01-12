@@ -1,6 +1,7 @@
 package common.jeycode.creationaldessignpattern.abstractfactory.files;
 
-public interface Weapon extends Item {
+public interface Weapon extends Item
+{
 
 						int durability();
 

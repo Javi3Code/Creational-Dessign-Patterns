@@ -1,6 +1,7 @@
 package common.jeycode.creationaldessignpattern.factorymethod.files;
 
-public interface Payment {
+public interface Payment
+{
 
 						String SUCCES = "Successful payment";
 						String ERROR = "Payment could not be made";

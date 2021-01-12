@@ -1,7 +1,7 @@
 package common.jeycode.creationaldessignpattern.abstractfactory.files;
 
-
-public interface Item {
+public interface Item
+{
 
 						String draw();
 }

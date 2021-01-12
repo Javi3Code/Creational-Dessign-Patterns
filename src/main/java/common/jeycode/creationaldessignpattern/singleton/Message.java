@@ -1,7 +1,7 @@
 package common.jeycode.creationaldessignpattern.singleton;
 
-
-public interface Message {
+public interface Message
+{
 
 						void accept(String mmessage);
 

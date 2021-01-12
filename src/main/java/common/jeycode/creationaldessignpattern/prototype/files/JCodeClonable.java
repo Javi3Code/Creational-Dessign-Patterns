@@ -1,7 +1,7 @@
 package common.jeycode.creationaldessignpattern.prototype.files;
 
-
-public interface JCodeClonable {
+public interface JCodeClonable
+{
 
 						AbstractCloud shallowClone();
 

@@ -1,6 +1,7 @@
 package common.jeycode.creationaldessignpattern.prototype.files;
 
-public interface CloudFactory {
+public interface CloudFactory
+{
 
 						AbstractCloud createSimpleCloud();
 
