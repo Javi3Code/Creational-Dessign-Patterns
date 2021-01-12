@@ -1,10 +1,10 @@
 package common.jeycode.creationaldessignpattern.prototype;
 
 import common.jeycode.creationaldessignpattern.prototype.files.CloudFactory;
+import common.jeycode.creationaldessignpattern.prototype.files.DeepCloneFactory;
 import common.jeycode.creationaldessignpattern.prototype.files.OriginalShape;
 import common.jeycode.creationaldessignpattern.prototype.files.OriginalShape.JColor;
 import common.jeycode.creationaldessignpattern.prototype.files.OriginalShape.JShape;
-import common.jeycode.creationaldessignpattern.prototype.files.ShallowCloneFactory;
 import common.jeycode.creationaldessignpattern.prototype.view.CloudFrame;
 
 public class PrototypeDesignPatter
@@ -16,7 +16,8 @@ public class PrototypeDesignPatter
 
       public PrototypeDesignPatter()
       {
-            cloudFactory = ShallowCloneFactory.getFactory(shape);
+            cloudFactory = DeepCloneFactory.getFactory(shape);
+//            cloudFactory = ShallowCloneFactory.getFactory(shape);
             cloudframe = CloudFrame.cloudFrame(cloudFactory);
             cloudframe.init();
       }
