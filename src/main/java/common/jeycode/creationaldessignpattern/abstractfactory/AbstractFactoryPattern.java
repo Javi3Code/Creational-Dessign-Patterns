@@ -12,7 +12,10 @@ public class AbstractFactoryPattern
 
       public AbstractFactoryPattern()
       {
-            factory = FactoryProducer.getGraphicsPixelFactoryInstance();
+//            factory = FactoryProducer.getGraphicsPixelFactoryInstance();
+//            factory = FactoryProducer.getGraphics3DFactoryInstance();
+            factory = FactoryProducer.getGraphics2DFactoryInstance();
+
             game = DinamicGame.initGame(factory);
             game.start();
       }
