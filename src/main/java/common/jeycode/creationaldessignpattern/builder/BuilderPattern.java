@@ -36,8 +36,6 @@ public class BuilderPattern
       private void createMessage(StringBuilder textBuilder)
       {
             user.getPermissionList()
-                .stream()
-                .map(e-> e + "<br>")
                 .forEach(textBuilder::append);
       }
 
