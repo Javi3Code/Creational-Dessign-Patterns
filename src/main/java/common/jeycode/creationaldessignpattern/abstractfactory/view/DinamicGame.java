@@ -12,47 +12,47 @@ import common.jeycode.creationaldessignpattern.abstractfactory.files.SpritesFact
 public final class DinamicGame
 {
 
-						private DinamicFrame frame;
-						private final JArea textArea;
-						private final List<Item> listOfItems = new ArrayList<>();
+      private DinamicFrame frame;
+      private final JArea textArea;
+      private final List<Item> listOfItems = new ArrayList<>();
 
-						private DinamicGame(SpritesFactory factory)
-						{
-												setFrame();
+      private DinamicGame(SpritesFactory factory)
+      {
+            setFrame();
             loadList(factory);
-       					textArea = frame.getTextArea(listOfItems);
-						}
+            textArea = frame.getTextArea(listOfItems);
+      }
 
-						private void loadList(SpritesFactory factory)
-						{
-												listOfItems.add(factory.createCharacter());
-												listOfItems.add(factory.createEnemy());
-												listOfItems.add(factory.createMap());
-												listOfItems.add(factory.createWeapon());
-						}
+      private void loadList(SpritesFactory factory)
+      {
+            listOfItems.add(factory.createCharacter());
+            listOfItems.add(factory.createEnemy());
+            listOfItems.add(factory.createMap());
+            listOfItems.add(factory.createWeapon());
+      }
 
-						private void setFrame()
-						{
-												frame = new DinamicFrame();
-												var dimension = Toolkit.getDefaultToolkit()
-																																			.getScreenSize();
-												var width = (int)dimension.getWidth() - 200;
-												var height = (int)dimension.getHeight() - 200;
-												frame.setSize(width,height);
-												frame.initComponents();
-												frame.setLocationRelativeTo(null);
-												frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-						}
+      private void setFrame()
+      {
+            frame = new DinamicFrame();
+            var dimension = Toolkit.getDefaultToolkit()
+                                   .getScreenSize();
+            var width = (int)dimension.getWidth() - 200;
+            var height = (int)dimension.getHeight() - 200;
+            frame.setSize(width,height);
+            frame.initComponents();
+            frame.setLocationRelativeTo(null);
+            frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+      }
 
-						public static DinamicGame initGame(SpritesFactory factory)
-						{
-												return new DinamicGame(factory);
-						}
+      public static DinamicGame initGame(SpritesFactory factory)
+      {
+            return new DinamicGame(factory);
+      }
 
-						public void start()
-						{
-												frame.setVisible(true);
-												textArea.startTimer();
-						}
+      public void start()
+      {
+            frame.setVisible(true);
+            textArea.startTimer();
+      }
 
 }
