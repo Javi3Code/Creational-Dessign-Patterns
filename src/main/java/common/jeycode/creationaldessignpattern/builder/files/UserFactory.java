@@ -5,39 +5,39 @@ import java.util.Objects;
 public final class UserFactory
 {
 
-						private static UserFactory instance;
+      private static UserFactory instance;
 
-						private UserFactory()
-						{}
+      private UserFactory()
+      {}
 
-						public static UserFactory getInstance()
-						{
-												instance = Objects.isNull(instance) ? new UserFactory() : instance;
-												return instance;
-						}
+      public static UserFactory getInstance()
+      {
+            instance = Objects.isNull(instance) ? new UserFactory() : instance;
+            return instance;
+      }
 
-						public UserBuilder user(Type user)
-						{
-												return user.getUser();
-						}
+      public UserBuilder user(Type user)
+      {
+            return user.getUser();
+      }
 
-						public enum Type
-						{
+      public enum Type
+      {
 
-							DEFAULT(new DefaultUserBuilder()),
-							PREMIUM(new PremiumUserBuilder());
+       DEFAULT(new DefaultUserBuilder()),
+       PREMIUM(new PremiumUserBuilder());
 
-												private UserBuilder user;
+            private UserBuilder user;
 
-												Type(UserBuilder user)
-												{
-																		this.user = user;
-												}
+            Type(UserBuilder user)
+            {
+                  this.user = user;
+            }
 
-												public UserBuilder getUser()
-												{
-																		return user;
-												}
-						}
+            public UserBuilder getUser()
+            {
+                  return user;
+            }
+      }
 
 }

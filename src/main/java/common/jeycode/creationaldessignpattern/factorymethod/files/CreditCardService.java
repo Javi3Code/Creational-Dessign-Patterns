@@ -5,21 +5,21 @@ import java.util.Objects;
 public class CreditCardService implements PaymentFactory
 {
 
-						private static CreditCardService factoryInstance;
+      private static CreditCardService factoryInstance;
 
-						private CreditCardService()
-						{}
+      private CreditCardService()
+      {}
 
-						public static PaymentFactory getPaymentServiceInstance()
-						{
-												factoryInstance = Objects.isNull(factoryInstance) ? new CreditCardService() : factoryInstance;
-												return factoryInstance;
-						}
+      public static PaymentFactory getPaymentServiceInstance()
+      {
+            factoryInstance = Objects.isNull(factoryInstance) ? new CreditCardService() : factoryInstance;
+            return factoryInstance;
+      }
 
-						@Override
-						public Payment createPayment()
-						{
-												return PaymentType.CREDIT_CARD.payment;
-						}
+      @Override
+      public Payment createPayment()
+      {
+            return PaymentType.CREDIT_CARD.payment;
+      }
 
 }

@@ -3,11 +3,11 @@ package common.jeycode.creationaldessignpattern.abstractfactory.files;
 public interface SpritesFactory
 {
 
-						Character createCharacter();
+      Character createCharacter();
 
-						Weapon createWeapon();
+      Weapon createWeapon();
 
-						Map createMap();
+      Map createMap();
 
-						Enemy createEnemy();
+      Enemy createEnemy();
 }

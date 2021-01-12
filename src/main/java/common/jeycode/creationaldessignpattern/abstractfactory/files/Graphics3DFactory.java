@@ -5,38 +5,38 @@ import java.util.Objects;
 public final class Graphics3DFactory implements SpritesFactory
 {
 
-						private static SpritesFactory instance;
+      private static SpritesFactory instance;
 
-						private Graphics3DFactory()
-						{}
+      private Graphics3DFactory()
+      {}
 
-						protected static SpritesFactory getInstance()
-						{
-												instance = Objects.isNull(instance) ? new Graphics3DFactory() : instance;
-												return instance;
-						}
+      protected static SpritesFactory getInstance()
+      {
+            instance = Objects.isNull(instance) ? new Graphics3DFactory() : instance;
+            return instance;
+      }
 
-						@Override
-						public Character createCharacter()
-						{
-												return new G3DCharacter();
-						}
+      @Override
+      public Character createCharacter()
+      {
+            return new G3DCharacter();
+      }
 
-						@Override
-						public Weapon createWeapon()
-						{
-												return new G3DWeapon();
-						}
+      @Override
+      public Weapon createWeapon()
+      {
+            return new G3DWeapon();
+      }
 
-						@Override
-						public Map createMap()
-						{
-												return new G3DMap();
-						}
+      @Override
+      public Map createMap()
+      {
+            return new G3DMap();
+      }
 
-						@Override
-						public Enemy createEnemy()
-						{
-												return new G3DEnemie();
-						}
+      @Override
+      public Enemy createEnemy()
+      {
+            return new G3DEnemie();
+      }
 }

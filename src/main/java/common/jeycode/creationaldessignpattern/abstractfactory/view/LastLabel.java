@@ -18,53 +18,53 @@ import manipulateComponents.pattern.abstractWay.bounds.ManipulationEffect;
 public class LastLabel extends JLabel
 {
 
-						private static final long serialVersionUID = 1L;
-						private BufferedImage image;
-						private ManipulationEffect effect;
+      private static final long serialVersionUID = 1L;
+      private BufferedImage image;
+      private ManipulationEffect effect;
 
-						private final static String PATH = "src/image/labelEnd.png";
+      private final static String PATH = "src/image/labelEnd.png";
 
-						public LastLabel(int width,int height)
-						{
-												this.setSize(width,height);
-												loadImage();
-						}
+      public LastLabel(int width,int height)
+      {
+            this.setSize(width,height);
+            loadImage();
+      }
 
-						public void createEvent()
-						{
-												effect = ManipulationEffect.simple(this,Velocity.ULTRAGEAR)
-																																							.params(ManipulateBounds.X_AXIS,0)
-																																							.create();
-						}
+      public void createEvent()
+      {
+            effect = ManipulationEffect.simple(this,Velocity.ULTRAGEAR)
+                                       .params(ManipulateBounds.X_AXIS,0)
+                                       .create();
+      }
 
-						private void loadImage()
-						{
-												try
-												{
-																		image = ImageIO.read(new File(PATH));
-												}
-												catch (IOException ex)
-												{
-																		ex.printStackTrace();
-												}
-						}
+      private void loadImage()
+      {
+            try
+            {
+                  image = ImageIO.read(new File(PATH));
+            }
+            catch (IOException ex)
+            {
+                  ex.printStackTrace();
+            }
+      }
 
-						public void start()
-						{
-												effect.start();
-						}
+      public void start()
+      {
+            effect.start();
+      }
 
-						@Override
-						protected void paintComponent(Graphics g)
-						{
-												super.paintComponent(g);
-												final var g2d = (Graphics2D)g;
-												g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
-												g2d.drawImage(image,0,0,getWidth(),getHeight(),this);
-						}
+      @Override
+      protected void paintComponent(Graphics g)
+      {
+            super.paintComponent(g);
+            final var g2d = (Graphics2D)g;
+            g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
+            g2d.drawImage(image,0,0,getWidth(),getHeight(),this);
+      }
 
-						public Timer getTimer()
-						{
-												return effect.getTimer();
-						}
+      public Timer getTimer()
+      {
+            return effect.getTimer();
+      }
 }

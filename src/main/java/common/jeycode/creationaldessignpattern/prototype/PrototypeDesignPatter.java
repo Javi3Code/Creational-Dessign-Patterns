@@ -10,20 +10,20 @@ import common.jeycode.creationaldessignpattern.prototype.view.CloudFrame;
 public class PrototypeDesignPatter
 {
 
-						CloudFrame cloudframe;
-						CloudFactory cloudFactory;
-						OriginalShape shape = new OriginalShape(JColor.GREY,JShape.SMALL);
+      CloudFrame cloudframe;
+      CloudFactory cloudFactory;
+      OriginalShape shape = new OriginalShape(JColor.GREY,JShape.SMALL);
 
-						public PrototypeDesignPatter()
-						{
-												cloudFactory = ShallowCloneFactory.getFactory(shape);
-												cloudframe = CloudFrame.cloudFrame(cloudFactory);
-												cloudframe.init();
-						}
+      public PrototypeDesignPatter()
+      {
+            cloudFactory = ShallowCloneFactory.getFactory(shape);
+            cloudframe = CloudFrame.cloudFrame(cloudFactory);
+            cloudframe.init();
+      }
 
-						public static void main(String[] args)
-						{
-												new PrototypeDesignPatter();
-						}
+      public static void main(String[] args)
+      {
+            new PrototypeDesignPatter();
+      }
 
 }

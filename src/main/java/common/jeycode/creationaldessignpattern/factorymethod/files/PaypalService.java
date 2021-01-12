@@ -5,21 +5,21 @@ import java.util.Objects;
 public class PaypalService implements PaymentFactory
 {
 
-						private static PaypalService factoryInstance;
+      private static PaypalService factoryInstance;
 
-						private PaypalService()
-						{}
+      private PaypalService()
+      {}
 
-						public static PaymentFactory getPaymentServiceInstance()
-						{
-												factoryInstance = Objects.isNull(factoryInstance) ? new PaypalService() : factoryInstance;
-												return factoryInstance;
-						}
+      public static PaymentFactory getPaymentServiceInstance()
+      {
+            factoryInstance = Objects.isNull(factoryInstance) ? new PaypalService() : factoryInstance;
+            return factoryInstance;
+      }
 
-						@Override
-						public Payment createPayment()
-						{
-												return PaymentType.PAYPAL.payment;
-						}
+      @Override
+      public Payment createPayment()
+      {
+            return PaymentType.PAYPAL.payment;
+      }
 
 }

@@ -3,10 +3,10 @@ package common.jeycode.creationaldessignpattern.abstractfactory.files;
 public interface Character extends Item
 {
 
-						int lifeTime();
+      int lifeTime();
 
-						int power();
+      int power();
 
-						int totalPoints();
+      int totalPoints();
 
 }

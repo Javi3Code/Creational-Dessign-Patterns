@@ -6,13 +6,13 @@ import java.awt.event.ActionListener;
 public enum EventEnum implements ActionListener
 {
 
-	SHOWMESSAGE;
+ SHOWMESSAGE;
 
-						@Override
-						public void actionPerformed(ActionEvent e)
-						{
+      @Override
+      public void actionPerformed(ActionEvent e)
+      {
 
-												System.out.println("Evento Singleton");
-						}
+            System.out.println("Evento Singleton");
+      }
 
 }

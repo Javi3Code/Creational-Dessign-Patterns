@@ -3,12 +3,12 @@ package common.jeycode.creationaldessignpattern.abstractfactory.files;
 public interface Enemy extends Character
 {
 
-						byte points();
+      byte points();
 
-						@Override
-						default int totalPoints()
-						{
-												return 0;
-						}
+      @Override
+      default int totalPoints()
+      {
+            return 0;
+      }
 
 }

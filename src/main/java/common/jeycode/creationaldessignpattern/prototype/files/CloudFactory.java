@@ -3,9 +3,9 @@ package common.jeycode.creationaldessignpattern.prototype.files;
 public interface CloudFactory
 {
 
-						AbstractCloud createSimpleCloud();
+      AbstractCloud createSimpleCloud();
 
-						AbstractCloud createComplexCloud();
+      AbstractCloud createComplexCloud();
 
-						OriginalShape getOriginalShape();
+      OriginalShape getOriginalShape();
 }

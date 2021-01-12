@@ -3,13 +3,13 @@ package common.jeycode.creationaldessignpattern.factorymethod.files;
 public interface Payment
 {
 
-						String SUCCES = "Successful payment";
-						String ERROR = "Payment could not be made";
+      String SUCCES = "Successful payment";
+      String ERROR = "Payment could not be made";
 
-						void configurePayment(String variable,int quantity);
+      void configurePayment(String variable,int quantity);
 
-						boolean makePayment();
+      boolean makePayment();
 
-						void getTicket();
+      void getTicket();
 
 }

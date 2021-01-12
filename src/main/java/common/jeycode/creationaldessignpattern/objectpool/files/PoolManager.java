@@ -3,13 +3,13 @@ package common.jeycode.creationaldessignpattern.objectpool.files;
 public interface PoolManager<T>
 {
 
-						T getReusableObject() throws Exception;
+      T getReusableObject() throws Exception;
 
-						void setInitialNumberOfObjects(int quantity);
+      void setInitialNumberOfObjects(int quantity);
 
-						void idealNumberOfObjects(int quantity);
+      void idealNumberOfObjects(int quantity);
 
-						void setMaxNumberOfObjects(int max);
+      void setMaxNumberOfObjects(int max);
 
-						void setTimeOut(float seconds);
+      void setTimeOut(float seconds);
 }

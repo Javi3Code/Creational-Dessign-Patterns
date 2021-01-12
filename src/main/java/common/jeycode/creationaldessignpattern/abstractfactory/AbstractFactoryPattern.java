@@ -7,18 +7,18 @@ import common.jeycode.creationaldessignpattern.abstractfactory.view.DinamicGame;
 public class AbstractFactoryPattern
 {
 
-						private final DinamicGame game;
-						private final SpritesFactory factory;
+      private final DinamicGame game;
+      private final SpritesFactory factory;
 
-						public AbstractFactoryPattern()
-						{
-												factory = FactoryProducer.getGraphicsPixelFactoryInstance();
-												game = DinamicGame.initGame(factory);
-												game.start();
-						}
+      public AbstractFactoryPattern()
+      {
+            factory = FactoryProducer.getGraphicsPixelFactoryInstance();
+            game = DinamicGame.initGame(factory);
+            game.start();
+      }
 
-						public static void main(String[] args)
-						{
-												new AbstractFactoryPattern();
-						}
+      public static void main(String[] args)
+      {
+            new AbstractFactoryPattern();
+      }
 }

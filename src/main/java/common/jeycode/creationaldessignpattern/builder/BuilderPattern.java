@@ -10,39 +10,39 @@ import common.jeycode.creationaldessignpattern.builder.files.UserFactory.Type;
 public class BuilderPattern
 {
 
-						private final User user;
+      private final User user;
 
-						public BuilderPattern()
-						{
+      public BuilderPattern()
+      {
 
-												user = UserFactory.getInstance()
-																														.user(Type.PREMIUM)
-																														.name("J.")
-																														.lastname("Code")
-																														.nickname("Javitxu")
-																														.password("qwerty")
-																														.build();
+            user = UserFactory.getInstance()
+                              .user(Type.PREMIUM)
+                              .name("J.")
+                              .lastname("Code")
+                              .nickname("Javitxu")
+                              .password("qwerty")
+                              .build();
 
-												showPermissionList();
-						}
+            showPermissionList();
+      }
 
-						private void showPermissionList()
-						{
-												var textBuilder = new StringBuilder(user.toString());
-												createMessage(textBuilder);
-												System.out.println(textBuilder.toString());
-						}
+      private void showPermissionList()
+      {
+            var textBuilder = new StringBuilder(user.toString());
+            createMessage(textBuilder);
+            System.out.println(textBuilder.toString());
+      }
 
-						private void createMessage(StringBuilder textBuilder)
-						{
-												user.getPermissionList()
-																.stream()
-																.map(e-> e + "<br>")
-																.forEach(textBuilder::append);
-						}
+      private void createMessage(StringBuilder textBuilder)
+      {
+            user.getPermissionList()
+                .stream()
+                .map(e-> e + "<br>")
+                .forEach(textBuilder::append);
+      }
 
-						public static void main(String[] args)
-						{
-												new BuilderPattern();
-						}
+      public static void main(String[] args)
+      {
+            new BuilderPattern();
+      }
 }

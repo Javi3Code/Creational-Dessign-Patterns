@@ -3,23 +3,23 @@ package common.jeycode.creationaldessignpattern.builder.files;
 public class PremiumUserBuilder extends UserBuilder
 {
 
-						public PremiumUserBuilder()
-						{}
+      public PremiumUserBuilder()
+      {}
 
-						@Override
-						void permissionList()
-						{
-												permissionList.add("Change nickname ten times");
-												permissionList.add("Free shipping");
-												permissionList.add("Discounts");
-												user.setPermissionList(permissionList);
-						}
+      @Override
+      void permissionList()
+      {
+            permissionList.add("Change nickname ten times");
+            permissionList.add("Free shipping");
+            permissionList.add("Discounts");
+            user.setPermissionList(permissionList);
+      }
 
-						@Override
-						public User build()
-						{
-												permissionList();
-												return user;
-						}
+      @Override
+      public User build()
+      {
+            permissionList();
+            return user;
+      }
 
 }

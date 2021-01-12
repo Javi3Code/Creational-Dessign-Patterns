@@ -19,8 +19,8 @@ public final class DinamicGame
 						private DinamicGame(SpritesFactory factory)
 						{
 												setFrame();
-												loadList(factory);
-												textArea = frame.getTextArea(listOfItems);
+            loadList(factory);
+       					textArea = frame.getTextArea(listOfItems);
 						}
 
 						private void loadList(SpritesFactory factory)
