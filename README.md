@@ -16,3 +16,6 @@ En mi canal de YT se encuentra la explicación.
 - JDK 11
 - Apache Maven
 - Librerías propias para efectos u otras utilidades, las puedes encontrar en el repositorio.
+
+# Tarea Pendiente
+Documentación
