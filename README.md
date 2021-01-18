@@ -1,8 +1,9 @@
 # CreationalDessignPatterns
-Examples of design patterns implemented in java, material to learn.
+- Examples of design patterns implemented in java, material to learn
 
-Ejemplos para comprender la ventaja, en ciertos casos, de usar un patrón creacional.
-En mi canal de YT se encuentra la explicación.
+- Ejemplos para comprender la ventaja, en ciertos casos, de usar un patrón creacional, así de la forma de inplementarlo
+  - Realizados como video-tutoriales, los puedes encontrar en <a href="https://www.youtube.com/watch?v=yWLt4aXoMwM&list=PLjJ8HhsSfskg8R_WvT71LDJW8bvkoaeUT">Jey Code</a>
+
 
 ## Tipos de Patrones Creacionales Que Encontrarás
 - Singleton
@@ -15,8 +16,8 @@ En mi canal de YT se encuentra la explicación.
 ## Tecnologías Utilizadas
 - JDK 11
 - Apache Maven
-- Librerías propias para efectos u otras utilidades, las puedes encontrar en el repositorio.
-  <a href="">JCodeUtils</a>
+- Librerías propias para efectos u otras utilidades innecesarias para la comprensión de los patrones
+  <a href=""></a>
 
 ## Tarea Pendiente
-Documentación
+- Documentación
