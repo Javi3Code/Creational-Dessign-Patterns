@@ -17,7 +17,7 @@
 - JDK 11
 - Apache Maven
 - Librerías propias para efectos u otras utilidades innecesarias para la comprensión de los patrones
-  <a href=""></a>
-
+  - <a href="https://github.com/Javi3Code/JeyCodeSwingEffects.git">JeyCodeSwingEffects</a>
+  - <a href="https://github.com/Javi3Code/JeyCodeSwingEffects.git"></a>
 ## Tarea Pendiente
 - Documentación
